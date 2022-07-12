@@ -21,7 +21,7 @@ import {
 	where,
 } from 'https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore.js';
 
-import { firebaseConfig } from './firebaseConfig.js';
+import firebaseConfig  from './firebaseConfig.js';
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();

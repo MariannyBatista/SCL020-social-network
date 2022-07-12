@@ -4,6 +4,7 @@ import { interpLogIn } from './lib/views/viewLogIn.js';
 import { changeRoute } from './router/router.js';
 
 const init = () => {
+	/*window.location.href = 'https://sn-seshatlab.netlify.app/#/';*/
 	const root = document.getElementById('root');
 	root.innerHTML = interpLogIn();
 	window.addEventListener('hashchange', () => {

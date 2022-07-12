@@ -69,10 +69,10 @@ export const snapshotProfile = (callback) => {
 export const deletePost = (id) => {
 	deleteDoc(doc(db, 'Comentarios', id))
 		.then(() => {
-			alert('Post eliminado');
+			/*alert('Post eliminado');*/
 		})
 		.catch(() => {
-			alert('Error al eliminar el post');
+			/*alert('Error al eliminar el post');*/
 		});
 };
 
@@ -82,10 +82,10 @@ export const updatePost = (id, title, text) => {
 		Content: text,
 		Title: title,
 	}).then(() => {
-			alert("funciono")
+			/*alert("funciono")*/
 		})
 		.catch(() => {
-			alert('Error');
+			/*alert('Error');*/
 		});
 };
 

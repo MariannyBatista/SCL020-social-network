@@ -79,14 +79,14 @@ export const interpPostProfile = async () => {
     const editOptions = document.querySelectorAll('.btnEditProfile');
     editOptions.forEach((btn) => {
       btn.addEventListener('click', (event) => {
-		  alert("1")
+		  /*alert("1")*/
         event.preventDefault();
         const editForm = document.querySelector('#edit-form');
         editModalContainer.classList.remove('hidden-component');
         const postId = event.target.getAttribute('data-postid');
         console.log(postId);     
         editForm.addEventListener('submit', (e) => {
-          alert("3")
+          /*alert("3")*/
           e.preventDefault();
           const postTitle = editForm.titleEdit.value;
           const postContent = editForm.contentEdit.value;
@@ -117,11 +117,11 @@ export const editModal = () => {
     <div class="modalEdit-container">
     <span class="closeEdit">&times</span>
       <div class="modalEdit-content">
-        <form action="" id="edit-form">
-        <p class="editp">Editar publicacion<p>
-        <input id="title-post-edit" name="titleEdit" placeholder="Coloca un titulo">
-        <input id="content-post-edit" name="contentEdit" placeholder="Deja un comentario">
-        <button id="accept">Confirmar</button>
+        <form action="" id="edit-form" class="formOrden">
+        <div class="editp boxtxtTitle">Editar publicación</div>
+        <input id="title-post-edit" name="titleEdit" placeholder="Coloca un título" class="campotxt">
+        <input id="content-post-edit" name="contentEdit" placeholder="Deja un comentario" class="campotxt">
+        <button id="accept" class="post">Confirmar</button>
       </form>
       </div>
     </div>  
